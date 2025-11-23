@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pontos Turísticos Mais Visitados — Bebel</title>
+  <link rel="canonical" href="https://www.bebel.br/" />
+  <meta name="description" content="Resumo dos pontos turísticos mais visitados do mundo — Times Square, Central Park, Torre Eiffel, Coliseu e Taj Mahal. Gráficos e curiosidades." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071029 0%, #081223 100%);color:#e6eef6;margin:0;line-height:1.5}
+    .container{max-width:1100px;margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    main{margin-top:22px;display:grid;grid-template-columns:1fr;gap:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+    .card h3{margin:0 0 8px}
+    .metric{font-weight:700;font-size:18px;color:#fff}
+    .muted{color:var(--muted);font-size:14px}
+    .section-title{display:flex;align-items:center;justify-content:space-between}
+    .charts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    /* simple responsive */
+    @media (max-width:720px){.charts{grid-template-columns:1fr}.brand h1{font-size:16px}}
+    /* small helpers */
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);font-size:13px;color:var(--muted);}
+    .badge{background:rgba(6,182,212,0.12);color:var(--accent);padding:6px 8px;border-radius:8px;font-weight:600}
+    .source{font-size:12px;color:var(--muted);margin-top:10px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#06b6d4,#7c3aed);color:#042027;text-decoration:none;font-weight:700}
+    .chart-legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .legend-item{display:flex;gap:8px;align-items:center}
+    .swatch{width:12px;height:12px;border-radius:3px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <h1>Pontos Turísticos Mais Visitados — Bebel</h1>
+          <p class="lead">Resumo com dados, gráficos e curiosidades. (Dados ilustrativos)</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#atracoes">Atrações</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#graficos">Gráficos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="atracoes" class="card">
+        <div class="section-title"><h2>Top 5 Atrações</h2><span class="pill">Atualização: versão rápida</span></div>
+        <p class="muted">As atrações abaixo são as mesmas apresentadas nos slides: Times Square, Central Park, Torre Eiffel, Coliseu e Taj Mahal. Números são estimativas em milhões de visitantes por ano.</p>
+        <div class="grid" style="margin-top:12px">
+          <article class="card">
+            <h3>Times Square — Nova York</h3>
+            <div class="metric">50 milhões/ano</div>
+            <div class="muted">Local: Nova York (América do Norte)</div>
+            <p class="muted" style="margin-top:8px">Famosa por painéis luminosos, teatros da Broadway, celebração de Réveillon e grande fluxo 24h.</p>
+          </article>
+
+          <article class="card">
+            <h3>Central Park — Nova York</h3>
+            <div class="metric">42 milhões/ano</div>
+            <div class="muted">Local: Nova York (América do Norte)</div>
+            <p class="muted" style="margin-top:8px">Parque urbano icônico com lagos, áreas para eventos e grande atração gratuita.</p>
+          </article>
+
+          <article class="card">
+            <h3>Torre Eiffel — Paris</h3>
+            <div class="metric">32 milhões/ano</div>
+            <div class="muted">Local: Paris (Europa)</div>
+            <p class="muted" style="margin-top:8px">Símbolo nacional da França, arquitetura histórica e ponto fotográfico principal.</p>
+          </article>
+
+          <article class="card">
+            <h3>Coliseu — Roma</h3>
+            <div class="metric">28 milhões/ano</div>
+            <div class="muted">Local: Roma (Europa)</div>
+            <p class="muted" style="margin-top:8px">Anfiteatro do Império Romano, patrimônio histórico mundial.</p>
+          </article>
+
+          <article class="card">
+            <h3>Taj Mahal — Agra</h3>
+            <div class="metric">22 milhões/ano</div>
+            <div class="muted">Local: Agra (Ásia)</div>
+            <p class="muted" style="margin-top:8px">Mausoléu e uma das 7 maravilhas do mundo moderno.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="curiosidades" class="card">
+        <h2>Curiosidades e Impacto</h2>
+        <ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">
+          <li>Europa concentra a maior parcela de atrações famosas.</li>
+          <li>Grandes cidades como Paris, Londres, Nova York e Bangkok dominam o turismo urbano.</li>
+          <li>Muitas atrações gratuitas (parques, praças) podem ter mais visitantes que monumentos pagos.</li>
+          <li>O turismo movimenta trilhões de dólares e milhões de empregos globalmente.</li>
+        </ul>
+      </section>
+
+      <section id="graficos" class="card">
+        <div class="section-title"><h2>Gráficos</h2><a class="btn" href="https://www.bebel.br" target="_blank" rel="noopener">Ir para: www.bebel.br</a></div>
+        <p class="muted">Os gráficos abaixo são gerados com dados ilustrativos usados nos slides. Valores já aparecem numericamente ao lado das séries.</p>
+
+        <div class="charts" style="margin-top:12px">
+          <!-- Bar chart (SVG) -->
+          <div class="card" aria-label="Gráfico de barras: top 5 atrações">
+            <h3>Top 5 — Visitantes (milhões/ano)</h3>
+            <svg viewBox="0 0 600 260" width="100%" height="220" role="img" aria-labelledby="barTitle">
+              <title id="barTitle">Gráfico de barras com os 5 locais e seus visitantes em milhões</title>
+              <!-- axes -->
+              <rect x="50" y="30" width="2" height="180" fill="#94a3b8" opacity="0.3"/>
+              <line x1="50" y1="210" x2="560" y2="210" stroke="#94a3b8" stroke-opacity="0.2"/>
+
+              <!-- bars -->
+              <!-- Times Square 50 -->
+              <rect x="80" y="60" width="70" height="150" rx="6" fill="#06b6d4" />
+              <text x="115" y="50" font-size="13" text-anchor="middle">Times Sq</text>
+              <text x="115" y="235" font-size="12" text-anchor="middle">50M</text>
+
+              <!-- Central Park 42 -->
+              <rect x="170" y="80" width="70" height="130" rx="6" fill="#7c3aed" />
+              <text x="205" y="50" font-size="13" text-anchor="middle">Central Pk</text>
+              <text x="205" y="235" font-size="12" text-anchor="middle">42M</text>
+
+              <!-- Eiffel 32 -->
+              <rect x="260" y="110" width="70" height="100" rx="6" fill="#22c55e" />
+              <text x="295" y="50" font-size="13" text-anchor="middle">Eiffel</text>
+              <text x="295" y="235" font-size="12" text-anchor="middle">32M</text>
+
+              <!-- Coliseu 28 -->
+              <rect x="350" y="125" width="70" height="85" rx="6" fill="#fb923c" />
+              <text x="385" y="50" font-size="13" text-anchor="middle">Coliseu</text>
+              <text x="385" y="235" font-size="12" text-anchor="middle">28M</text>
+
+              <!-- Taj Mahal 22 -->
+              <rect x="440" y="150" width="70" height="60" rx="6" fill="#ef4444" />
+              <text x="475" y="50" font-size="13" text-anchor="middle">Taj Mahal</text>
+              <text x="475" y="235" font-size="12" text-anchor="middle">22M</text>
+
+              <!-- y labels -->
+              <text x="20" y="60" font-size="11" fill="#94a3b8">200</text>
+              <text x="20" y="120" font-size="11" fill="#94a3b8">150</text>
+              <text x="20" y="180" font-size="11" fill="#94a3b8">100</text>
+            </svg>
+            <div class="source">Dados (ilustrativos): Times Sq 50M • Central Park 42M • Torre Eiffel 32M • Coliseu 28M • Taj Mahal 22M</div>
+          </div>
+
+          <!-- Pie chart (SVG) -->
+          <div class="card" aria-label="Gráfico de pizza: distribuição por continente">
+            <h3>Distribuição por continente (%)</h3>
+            <svg viewBox="0 0 360 220" width="100%" height="220" role="img" aria-labelledby="pieTitle">
+              <title id="pieTitle">Gráfico de pizza mostrando porcentagem por continente</title>
+              <!-- simple pie using circles stroke-dasharray trick -->
+              <g transform="translate(110,110)">
+                <!-- total 100; segments: 45,30,20,3,1,1 -->
+                <!-- Europa 45% -->
+                <circle r="80" cx="0" cy="0" fill="transparent" stroke="#7c3aed" stroke-width="160" stroke-dasharray="283 177" stroke-dashoffset="0" transform="rotate(-90)"/>
+                <!-- América N 30% -->
+                <circle r="80" cx="0" cy="0" fill="transparent" stroke="#06b6d4" stroke-width="160" stroke-dasharray="188 272" stroke-dashoffset="-283" transform="rotate(-90)"/>
+                <!-- Ásia 20% -->
+                <circle r="80" cx="0" cy="0" fill="transparent" stroke="#22c55e" stroke-width="160" stroke-dasharray="125 335" stroke-dashoffset="-471" transform="rotate(-90)"/>
+                <!-- Oceania 3% -->
+                <circle r="80" cx="0" cy="0" fill="transparent" stroke="#fb923c" stroke-width="160" stroke-dasharray="18.8 441" stroke-dashoffset="-596" transform="rotate(-90)"/>
+                <!-- América S 1% -->
+                <circle r="80" cx="0" cy="0" fill="transparent" stroke="#ef4444" stroke-width="160" stroke-dasharray="6.28 454" stroke-dashoffset="-615" transform="rotate(-90)"/>
+                <!-- África 1% -->
+                <circle r="80" cx="0" cy="0" fill="transparent" stroke="#a1a1aa" stroke-width="160" stroke-dasharray="6.28 460" stroke-dashoffset="-621" transform="rotate(-90)"/>
+              </g>
+
+              <g transform="translate(240,30)" style="font-size:13px;fill:#e6eef6">
+                <text x="0" y="0">Europa — 45%</text>
+                <text x="0" y="20">América do Norte — 30%</text>
+                <text x="0" y="40">Ásia — 20%</text>
+                <text x="0" y="60">Oceania — 3%</text>
+                <text x="0" y="80">América do Sul — 1%</text>
+                <text x="0" y="100">África — 1%</text>
+              </g>
+            </svg>
+            <div class="source">Distribuição (ilustrativa): Europa 45% • América do Norte 30% • Ásia 20% • Oceania 3% • América do Sul 1% • África 1%</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>Site gerado rapidamente para <strong>www.bebel.br</strong>. Para publicar, salve este arquivo como <code>index.html</code> e envie para o servidor do domínio.</div>
+      <div class="source">Observação: números e porcentagens são estimativas ilustrativas fornecidas para apresentação. Para dados oficiais, consulte órgãos de turismo e estatísticas atualizadas.</div>
+    </footer>
+  </div>
+</body>
+</html>
